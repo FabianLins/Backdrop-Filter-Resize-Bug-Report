@@ -1,10 +1,11 @@
-# Backdrop-Filter-Resize-Bug-Report-And-Fix
+# Chrome-Backdrop-Filter-Resize-Bug-Report-And-Fix
 
 Demo:
-https://fabianlins.github.io/Backdrop-Filter-Resize-Bug-Report-And-Fix
+https://fabianlins.github.io/Chrome-Backdrop-Filter-Resize-Bug-Report-And-Fix
 
 Problem:
 If you resize a container with a backdrop-filter: blur propoerty if does not affect the area out of the window.
+It appeared on Chrome. Firefox did not have this issue.
 
 Worksaround:
 Add a minimal blur effect.
@@ -20,7 +21,6 @@ Before:
     backdrop-filter: blur(20px);
 }
 ```
-
 
 After:
 ```console
