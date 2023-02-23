@@ -10,6 +10,7 @@ Worksaround:
 Add a minimal blur effect.
 
 Before:
+```console
 .blur {
     width: 100%;
     height: 100vh;
@@ -18,8 +19,11 @@ Before:
     z-index: 2;
     backdrop-filter: blur(20px);
 }
+```
+
 
 After:
+```console
 .blur {
     width: 100%;
     height: 100vh;
@@ -29,3 +33,4 @@ After:
     backdrop-filter: blur(20px);
     filter: blur(0.01px);
 }
+```
