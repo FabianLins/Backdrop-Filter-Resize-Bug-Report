@@ -8,7 +8,7 @@ If you resize a container with a backdrop-filter: blur propoerty if does not aff
 It appeared on Chrome. Firefox did not have this issue.
 
 Worksaround:
-Add a minimal blur effect.
+Add a 0px blur effect.
 
 Before:
 ```console
@@ -19,6 +19,7 @@ Before:
     position: fixed;
     z-index: 2;
     backdrop-filter: blur(20px);
+    //filter: blur(0px);
 }
 ```
 
@@ -31,6 +32,6 @@ After:
     position: fixed;
     z-index: 2;
     backdrop-filter: blur(20px);
-    filter: blur(0.01px);
+    filter: blur(0px);
 }
 ```
