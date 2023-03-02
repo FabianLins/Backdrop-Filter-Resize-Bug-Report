@@ -7,7 +7,7 @@ Problem:
 If you resize a container with a backdrop-filter: blur propoerty if does not affect the area out of the window.
 It appeared on Chrome. Firefox did not have this issue.
 
-Worksaround:
+Work around:
 Add a 0px blur effect.
 
 Before:
